@@ -3,17 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="">
+  <link href="style.css">
   <style>
-    .head {
+    body {
+      margin: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      height: 500px;
+    }
+    .header {
         height: 30px;
-        background-color: #0275d8;
         border-bottom: 3px solid #ced4da;
+    }
+    .blue {
+      background-color: #0275d8;
+    }
+    .gray-border {
+      border: 1px solid #ced4da;
+    }
+    .login-box {
+      padding: 1.5em;
+    }
+    .text-bold {
+      font
     }
   </style>
 </head>
 <body>
-  <div class='head'>
+  <div class='header blue'>
   </div>
   {% block content %}
   {% endblock content %}
