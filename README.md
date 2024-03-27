@@ -18,3 +18,7 @@ git|[address0](https://github.com/address0)|[kim-caron](https://github.com/kim-c
 ### 선택 구현사항
 - FE: 로그인 버튼을 누르면 login 페이지로 이동되도록 구성하고, index page input field에 담긴 정보가 로그인 화면에 나오게 구성해 보세요.
 - BE: 로그인 input에 대해 정규표현식으로 검사해 보세요.
+## 2. 과제 소개
+### FE
+### BE
+### 부록: CDN 사용
