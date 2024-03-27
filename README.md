@@ -3,7 +3,7 @@
 역할|Front End|Back End
 ---|---|---
 팀원|주소영|김성현
-git|@address0|@kim_caron
+git|[address0](https://github.com/address0)|[kim_caron](https://github.com/kim_caron)
 ## 1. 구현사항
 ### FE
 - django의 templates 폴더에 화면을 구성해 주세요.
