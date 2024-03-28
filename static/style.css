@@ -1,0 +1,56 @@
+
+body {
+  margin: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header {
+    height: 30px;
+    border-bottom: 3px solid #ced4da;
+}
+.blue {
+  background-color: #0275d8;
+}
+.white {
+  color: white;
+}
+.gray-border {
+  border: 2px solid #ced4da;
+}
+input::placeholder {
+  color: #ced4da;
+  font-size: 14px;
+}
+.login-box {
+  padding: 1.5em;
+  border-radius: 5px;
+  margin: 15px;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-size {
+  font-size: 20px;
+}
+.box-center {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.box-size {
+  width: 400px;
+  height: 500px;
+}
+.box-round {
+  border-radius: 5px;
+}
