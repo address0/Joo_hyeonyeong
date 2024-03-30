@@ -2,6 +2,9 @@
 body {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -26,8 +29,16 @@ body {
 .white {
   color: white;
 }
+.gray {
+  color: gray;
+}
 .gray-border {
   border: 2px solid #ced4da;
+}
+.gray-br {
+  background:#ced4da;
+  height:1px;
+  border: 1px;
 }
 input::placeholder {
   color: #ced4da;
@@ -41,17 +52,45 @@ input::placeholder {
 .text-bold {
   font-weight: bold;
 }
-.text-size {
+.text-size-25 {
+  font-size: 25px;
+}
+.text-size-20 {
   font-size: 20px;
 }
-.box-center {
-  margin-top: auto;
-  margin-bottom: auto;
+.text-size-15 {
+  font-size: 15px;
 }
-.box-size {
+.box-center {
+  margin-top: 130px;
+}
+.login-size {
   width: 400px;
   height: 500px;
 }
+.data-size {
+  width: 550px;
+  height: 400px;
+}
+.data-box {
+  margin: 30px;
+}
 .box-round {
   border-radius: 5px;
+}
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.btn-home {
+  display: inline-block;
+  border: 2px solid #ced4da;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 15px;
 }
