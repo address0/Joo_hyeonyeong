@@ -4,6 +4,15 @@
 ---|---|---
 팀원|주소영|김성현
 git|[address0](https://github.com/address0)|[kim-caron](https://github.com/kim-caron)
+### 실행 환경
+python 3.9
+### Tech
+- BackEnd  
+<a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=FFFFFF"/></a>
+<a href="https://www.djangoproject.com/" target="_blank"><img src="https://img.shields.io/badge/Django-092E20?style=flat&logo=django&logoColor=FFFFFF"/></a>
+- FrontEnd  
+<a href="https://www.acmicpc.net/user/soyong32" target="_blank"><img src="https://img.shields.io/badge/Html-3366CC?style=flat&logo=htmx&logoColor=FFFFFF"/></a>
+<a href="https://developer.mozilla.org/ko/docs/Web/CSS" target="_blank"><img src="https://img.shields.io/badge/CSS-7952B3?style=flat&logo=bootstrap&logoColor=FFFFFF"/></a>
 ## 1. 구현사항
 ### FE
 - django의 templates 폴더에 화면을 구성해 주세요.
@@ -18,7 +27,29 @@ git|[address0](https://github.com/address0)|[kim-caron](https://github.com/kim-c
 ### 선택 구현사항
 - FE: 로그인 버튼을 누르면 login 페이지로 이동되도록 구성하고, index page input field에 담긴 정보가 로그인 화면에 나오게 구성해 보세요.
 - BE: 로그인 input에 대해 정규표현식으로 검사해 보세요.
-## 2. 과제 소개
-### FE
-### BE
-### 부록: CDN 사용
+## 2. 사용 방법
+```bash
+# 1. 가상환경에서 필수 라이브러리 설치
+python -m venv venv
+source venv/Scripts/activate
+pip install -r requirements.txt
+
+# 2. DB 마이그레이션
+python manage.py makemigrations
+python manage.py migrate
+
+# 3. 서버 실행
+python manage.py runserver
+
+# 4. Root Url
+http://127.0.0.1:8000/articles/
+```
+## 3. API 명세서(BE 작성)
+## 4. 페이지 소개(FE 작성)
+![index](images/index_page.png)
+> 홈페이지 디자인: 좌측은 로그인 화면, 우측은 급식 데이터 로드 화면. 로그인 버튼 클릭 시 로그인 페이지로 이동
+
+![login](images/login_page.png)
+> 로그인 페이지 디자인: 로그인 화면에서 데이터 전달받아 출력. '홈으로 돌아가기' 버튼 클릭 시 홈페이지로 이동
+
+**각 페이지는 모두 Responsive Web으로 제작되었습니다.**
