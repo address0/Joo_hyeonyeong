@@ -45,6 +45,10 @@ python manage.py runserver
 http://127.0.0.1:8000/articles/
 ```
 ## 3. API 명세서(BE 작성)
+|index|기능|HTTP Method|API Path|담당자|개발 현황|
+|-----|----|-----------|--------|------|---------|
+|[회원]|로그인|`POST`|`accounts/login`|[kim-caron](https://github.com/kim-caron)|진행 중|
+
 ## 4. 페이지 소개(FE 작성)
 ![index](images/index_page.png)
 > 홈페이지 디자인: 좌측은 로그인 화면, 우측은 급식 데이터 로드 화면. 로그인 버튼 클릭 시 로그인 페이지로 이동

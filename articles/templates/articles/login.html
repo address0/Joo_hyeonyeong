@@ -3,7 +3,7 @@
 {% block content %}
 <div class="login-page">
     <div class="text-center">
-        <p class="text-size-25 text-bold">{{form.id}}님, 3반에 오신 것을 환영합니다 :D</p>
+        <p class="text-size-25 text-bold">{{form.username}}님, 3반에 오신 것을 환영합니다 :D</p>
         <p class="text-size-25 text-bold">비밀번호({{form.password}})가 들키지 않게 조심해 주세요!</p>
         <a href="{% url "articles:index" %}" class="btn-home text-size-20 text-bold gray">홈으로 돌아가기</a>
     </div>
