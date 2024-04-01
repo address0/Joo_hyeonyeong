@@ -11,8 +11,9 @@
       </div>
         <form action="{% url "accounts:login" %}" method="POST" class="container">
           {% csrf_token %}
-          <input type="text" class="gray-border login-box" id="id" name="id" placeholder="아이디">
-          <input type="password" class="gray-border login-box" id="password" name="password" placeholder="비밀번호">
+          {{ form }}
+          {% comment %} <input type="text" class="gray-border login-box" id="id" name="id" placeholder="아이디"> {% endcomment %}
+          {% comment %} <input type="password" class="gray-border login-box" id="password" name="password" placeholder="비밀번호"> {% endcomment %}
           <input type="submit" class="blue white login-box text-bold" value="로그인">
         </form>
     </div>

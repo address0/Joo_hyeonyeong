@@ -1,14 +1,18 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
-from django.contrib.auth import authenticate
+from articles.forms import LoginForm
 
 # Create your views here.
 def login(request):
-    username = request.POST.get('id')
-    password = request.POST.get('password')
-    user = authenticate(username=username,password=password)
-    if user is not None:
-        auth_login(request,user)
-        return redirect('articles:login')
-    return render(request,'articles/index.html')
+    form = LoginForm(request, request.POST)
+    if form.is_valid():
+        auth_login(request,form.get_user())
+        context = {
+            'form' : form.get_user()
+        }
+        return render(request,'articles/login.html',context)
+    context = {
+        'form' : form,
+    }
+    return render(request,'articles/index.html',context)
