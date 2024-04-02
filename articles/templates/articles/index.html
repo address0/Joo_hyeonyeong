@@ -21,12 +21,16 @@
   <div class="data-size box-center gray-border box-round">
     <div class="data-box">
       <p class="text-bold text-size-20">20F</p>
-      <p class="text-bold text-size-15">20층 급식데이터</p>
+      {% for menu in 20F_menu %}
+      <p class="text-bold text-size-15">{{menu.set_menu_name}}</p>
+      {% endfor %}
     </div>
     <hr class="gray-br">
     <div class="data-box">
       <p class="text-bold text-size-20">10F</p>
-      <p class="text-bold text-size-15">10층 급식데이터</p>
+      {% for menu in 10F_menu %}
+      <p class="text-bold text-size-15">{{menu.set_menu_name}}</p>
+      {% endfor %}
     </div>
   </div>
 </div>

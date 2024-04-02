@@ -12,25 +12,27 @@ def index(request):
                 continue
             else:
                 if set_menu['menu_course_type'] == 'L3':
-                    menu = MenuList(
-                    date=json_data['date'],
-                    menu_course_type=set_menu['menu_course_type'],
-                    set_menu_name=set_menu['set_menu_name']
-                    )
+                    for set in set_menu['set_menu_name']:
+                        menu = MenuList(
+                            date=json_data['date'],
+                            menu_course_type=set_menu['menu_course_type'],
+                            set_menu_name=set
+                            )
+                        menu.save()
                 else:
                     menu = MenuList(
                         date=json_data['date'],
                         menu_course_type=set_menu['menu_course_type'],
                         set_menu_name=' / '.join(set_menu['set_menu_name'])
                         )
-                menu.save()
+                    menu.save()
                 
     form = LoginForm()
     menus = MenuList.objects.filter(date=json_data['date'])
     context = {
         'form' : form,
-        '20F_menu' : [menus.get(menu_course_type='L1'),menus.get(menu_course_type='L2')],
-        '10F_menu' : menus.get(menu_course_type='L3')
+        '20F_menu' : [menus.get(pk=1),menus.get(pk=2)],
+        '10F_menu' : [menus.get(pk=3), menus.get(pk=4), menus.get(pk=5)]
     }
     return render(request, 'articles/index.html', context)
 
