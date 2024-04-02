@@ -45,9 +45,10 @@ python manage.py runserver
 http://127.0.0.1:8000/articles/
 ```
 ## 3. API 명세서(BE 작성)
-|index|기능|HTTP Method|API Path|담당자|개발 현황|
+|index|기능|HTTP Method|API Path|담당자|설명|
 |-----|----|-----------|--------|------|---------|
-|[회원]|로그인|`POST`|`accounts/login`|[kim-caron](https://github.com/kim-caron)|진행 중|
+|[회원]|로그인|`POST`|`accounts/login`|[kim-caron](https://github.com/kim-caron)|forms.py로 인증 구현|
+|[회원]|급식 정보|`GET`|`articles/index`|[kim-caron](https://github.com/kim-caron)|급식 정보 JSON 파일을 DB에 저장, 메인 페이지에 넘겨줌|
 
 ## 4. 페이지 소개(FE 작성)
 ![index](images/index_page.png)
