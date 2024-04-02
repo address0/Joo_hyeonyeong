@@ -28,6 +28,7 @@ def index(request):
     form = LoginForm()
     menu_20F = MenuList.objects.filter(date=json_data['date'], menu_course_type='20')
     menu_10F = MenuList.objects.filter(date=json_data['date'], menu_course_type='10')
+    
     context = {
         'form' : form,
         '20F_menu' : menu_20F,
